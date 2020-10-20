@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-//! Barebones Watch Face for Rust + Mynewt on PineTime Smart Watch
+//! Hand-Drawn Watch Face for Rust + Mynewt on PineTime Smart Watch
 #![no_std]                              //  Don't link with standard Rust library, which is not compatible with embedded systems
 #![feature(trace_macros)]               //  Allow macro tracing: `trace_macros!(true)`
 #![feature(concat_idents)]              //  Allow `concat_idents!()` macro used in `coap!()` macro
