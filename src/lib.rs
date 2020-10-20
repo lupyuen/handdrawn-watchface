@@ -316,3 +316,21 @@ fn get_day_name(time: & WatchFaceTime) -> String {
 fn convert_battery_voltage(_voltage: u32) -> i32 {
     50  //  TODO
 }
+
+/*
+static lv_img_dsc_t <name>;
+const uint8_t <name>_map[] = {0x00,0x00,0x00...
+...0x00,0x00,0x00
+};
+
+ <name>.header.always_zero = 0; //Initialization
+ <name>.header.w = <picture_X>;                     // Setting the Width (or) Horizontal length of the image (number of px)
+ <name>.header.h = <picture_Y>;                     // Setting the Height (or) vertical length of the image (number of px)
+ <name>.data_size = <Hr_length> * <Vr_length> * LV_COLOR_SIZE / 8; //Allocation of memory for the image
+ <name>.header.cf = LV_IMG_CF_TRUE_COLOR; // Sets the color scheme for the image
+ <name>.data = <name>_map;                // Maps the Image data to the Array
+ lv_obj_t *img_src = lv_img_create(lv_scr_act(), NULL);  // Create an image object
+ lv_img_set_src(img_src, &<name>);        // Set the created file as image (<name>)
+ 
+ lv_obj_set_pos(img_src, <x_pos, <y_pos>); // <x_pos>, <y_pos> are the coordinates of the cartesian plane
+*/
