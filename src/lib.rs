@@ -54,7 +54,7 @@ use watchface::{
 //  Watch Face Definition
 
 /// Barebones Watch Face with no frills
-pub struct BarebonesWatchFace {
+pub struct HandDrawnWatchFace {
     /// Label for Time: "12:34"
     pub time_label:      lvgl::Ptr,
     /// Label for Date: "MON 22 MAY 2020"
@@ -65,7 +65,7 @@ pub struct BarebonesWatchFace {
     pub power_label:     lvgl::Ptr,
 }
 
-impl WatchFace for BarebonesWatchFace {
+impl WatchFace for HandDrawnWatchFace {
 
     ///////////////////////////////////////////////////////////////////////////////
     //  Create Watch Face
@@ -150,7 +150,7 @@ impl WatchFace for BarebonesWatchFace {
     }
 }
 
-impl BarebonesWatchFace {
+impl HandDrawnWatchFace {
 
     ///////////////////////////////////////////////////////////////////////////////
     //  Update Watch Face
