@@ -1,14 +1,14 @@
 # Info about this package.
 [package]
-name          = "barebones-watchface"
-version       = "2.0.0"
+name          = "handdrawn-watchface"
+version       = "1.0.0"
 authors       = ["Lee Lup Yuen <luppy@appkaki.com>"]
 edition       = "2018"
-description   = "Barebones Watch Face for Mynewt on PineTime Smart Watch"
-repository    = "https://github.com/lupyuen/barebones-watchface"
-documentation = "https://docs.rs/barebones-watchface"
+description   = "Hand-Drawn Watch Face for Mynewt on PineTime Smart Watch"
+repository    = "https://github.com/lupyuen/handdrawn-watchface"
+documentation = "https://docs.rs/handdrawn-watchface"
 categories    = ["embedded", "no-std"]
-keywords      = ["pinetime", "watchface", "mynewt", "lvgl", "barebones"]
+keywords      = ["pinetime", "watchface", "mynewt", "lvgl", "handdrawn"]
 readme        = "./README.md"
 license       = "Apache-2.0"
 
