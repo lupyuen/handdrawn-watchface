@@ -14,14 +14,18 @@ Hand-drawn Rust Watch Face for PineTime Smart Watch with LVGL and Mynewt...
 
 Built with [`pinetime-watchface`](https://crates.io/crates/pinetime-watchface) framework for watch faces.
 
-To select this watch face, set `WatchFaceType` in [`pinetime-rust-mynewt/rust/app/src/lib.rs`](https://github.com/lupyuen/pinetime-rust-mynewt/blob/master/rust/app/src/lib.rs)
+To select this watch face in the [`pinetime-rust-mynewt`](https://github.com/lupyuen/pinetime-rust-mynewt) firmware...
 
-```rust
-/// Declare the Watch Face Type
-type WatchFaceType = handdrawn_watchface::HandDrawnWatchFace;
-```
+1.  Add [`handdrawn-watchface`](https://crates.io/crates/handdrawn-watchface) to [`pinetime-rust-mynewt/rust/app/Cargo.toml`](https://github.com/lupyuen/pinetime-rust-mynewt/blob/master/rust/app/Cargo.toml)
 
-The bitmaps take about 170 KB of ROM. To fit them into PineTime's 512 KB Flash ROM, the large title font needs to be removed from the PineTime firmware build, leaving only the small font. (No changes needed for the WebAssembly Simulator)
+1.  Set `WatchFaceType` in [`pinetime-rust-mynewt/rust/app/src/lib.rs`](https://github.com/lupyuen/pinetime-rust-mynewt/blob/master/rust/app/src/lib.rs)
+
+    ```rust
+    /// Declare the Watch Face Type
+    type WatchFaceType = handdrawn_watchface::HandDrawnWatchFace;
+    ```
+
+The bitmaps occupy 160 KB of ROM. To fit them into PineTime's 512 KB Flash ROM, the large title font needs to be removed from the PineTime firmware build, leaving only the small font. (No changes needed for the WebAssembly Simulator)
 
 To remove the title font from the PineTime firmware build, edit [`pinetime-rust-mynewt/libs/pinetime_lvgl_mynewt/lv_conf.h`](https://gitlab.com/lupyuen/pinetime_lvgl_mynewt/-/blob/master/lv_conf.h) and change...
 
