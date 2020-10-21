@@ -41,7 +41,6 @@ use watchface::lvgl::{
 use watchface::{
     WatchFace,
     WatchFaceState,
-    WatchFaceTime,
 };
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -69,8 +68,10 @@ const IMAGE_HEIGHT: u32 = 100;
 const BYTES_PER_PIXEL: u32 = 2;
 
 /// Bitmaps for the 10 digits. LVGL bitmaps need to stored in static memory.
-static mut BITMAPS: [img::lv_img_dsc_t; 4] = [  //  TODO: Change to 10
+static mut BITMAPS: [img::lv_img_dsc_t; 10] = [
     fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t),
+    fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t),
+    fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t)
 ];
 
 impl WatchFace for HandDrawnWatchFace {
@@ -99,6 +100,12 @@ impl WatchFace for HandDrawnWatchFace {
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/1.bin") as *const u8, header, data_size },
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/2.bin") as *const u8, header, data_size },
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/3.bin") as *const u8, header, data_size },
+                img::lv_img_dsc_t { data: include_bytes!("../bitmaps/4.bin") as *const u8, header, data_size },
+                img::lv_img_dsc_t { data: include_bytes!("../bitmaps/5.bin") as *const u8, header, data_size },
+                img::lv_img_dsc_t { data: include_bytes!("../bitmaps/6.bin") as *const u8, header, data_size },
+                img::lv_img_dsc_t { data: include_bytes!("../bitmaps/7.bin") as *const u8, header, data_size },
+                img::lv_img_dsc_t { data: include_bytes!("../bitmaps/8.bin") as *const u8, header, data_size },
+                img::lv_img_dsc_t { data: include_bytes!("../bitmaps/9.bin") as *const u8, header, data_size },
             ];
         }
 
@@ -150,13 +157,43 @@ impl WatchFace for HandDrawnWatchFace {
 
     /// Update the widgets in the Watch Face with the current time
     fn update(&self, state: &WatchFaceState) -> MynewtResult<()> {
+        //  Update the top left image with the first digit of the hour
+        let digit = state.time.hour / 10;             //  Compute the first digit of the hour
+        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
+            unsafe { &mut BITMAPS[digit as usize] };  //  Unsafe because the bitmaps are static mutable
+        img::set_src(                                 //  Set the source...
+            self.top_left_image,                      //  Of the the top left image...
+            bitmap as *const c_void                   //  To the bitmap digit
+        ) ? ;
+
+        //  Update the top right image with the second digit of the hour
+        let digit = state.time.hour % 10;             //  Compute the second digit of the hour
+        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
+            unsafe { &mut BITMAPS[digit as usize] };  //  Unsafe because the bitmaps are static mutable
+        img::set_src(                                 //  Set the source...
+            self.top_right_image,                     //  Of the the top right image...
+            bitmap as *const c_void                   //  To the bitmap digit
+        ) ? ;
+
+        //  Update the bottom left image with the first digit of the minute
+        let digit = state.time.minute / 10;           //  Compute the first digit of the minute
+        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
+            unsafe { &mut BITMAPS[digit as usize] };  //  Unsafe because the bitmaps are static mutable
+        img::set_src(                                 //  Set the source...
+            self.bottom_left_image,                   //  Of the the bottom left image...
+            bitmap as *const c_void                   //  To the bitmap digit
+        ) ? ;
+
+        //  Update the bottom right image with the second digit of the minute
+        let digit = state.time.minute % 10;           //  Compute the second digit of the minute
+        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
+            unsafe { &mut BITMAPS[digit as usize] };  //  Unsafe because the bitmaps are static mutable
+        img::set_src(                                 //  Set the source...
+            self.bottom_right_image,                  //  Of the the bottom right image...
+            bitmap as *const c_void                   //  To the bitmap digit
+        ) ? ;
+
+        //  Return OK
         Ok(())
     }
-}
-
-impl HandDrawnWatchFace {
-
-    ///////////////////////////////////////////////////////////////////////////////
-    //  Update Watch Face
-
 }
