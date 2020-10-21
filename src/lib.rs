@@ -26,6 +26,7 @@
 pub use watchface;  //  Export the Watch Face Framework
 
 use core::{
+    ffi::c_void,
     ptr,
 };
 use watchface::lvgl::mynewt::{
@@ -102,9 +103,9 @@ impl WatchFace for HandDrawnWatchFace {
 
             //  Create the top left image
             top_left_image: {
-                let image = img::create(screen, ptr::null()) ? ;   //  `?` will terminate the function in case of error
+                let image = img::create(screen, ptr::null()) ? ;       //  `?` will terminate the function in case of error
                 let bitmap: *mut img::lv_img_dsc_t = &mut bitmaps[0];  //  Fetch bitmap for "0"
-                img::set_src(image, bitmap as *const core::ffi::c_void) ? ;  //  Set top left image to "0"
+                img::set_src(image, bitmap as *const c_void) ? ;       //  Set top left image to "0"
                 obj::set_pos(image, 40, 20) ? ;  //  Top left
                 image  //  Return the image as top_left_image
             },
@@ -112,8 +113,8 @@ impl WatchFace for HandDrawnWatchFace {
             //  Create the top right image
             top_right_image: {
                 let image = img::create(screen, ptr::null()) ? ;
-                let bitmap: *mut img::lv_img_dsc_t = &mut bitmaps[1];  //  Fetch bitmap for "0"
-                img::set_src(image, bitmap as *const core::ffi::c_void) ? ;                //  Set top right image to "1"
+                let bitmap: *mut img::lv_img_dsc_t = &mut bitmaps[1];  //  Fetch bitmap for "1"
+                img::set_src(image, bitmap as *const c_void) ? ;       //  Set top right image to "1"
                 obj::set_pos(image, 120, 20) ? ;  //  Top right
                 image  //  Return the image as top_right_image
             },
@@ -121,8 +122,8 @@ impl WatchFace for HandDrawnWatchFace {
             //  Create the bottom left image
             bottom_left_image: {
                 let image = img::create(screen, ptr::null()) ? ;
-                let bitmap: *mut img::lv_img_dsc_t = &mut bitmaps[2];  //  Fetch bitmap for "0"
-                img::set_src(image, bitmap as *const core::ffi::c_void) ? ;                //  Set bottom left image to "2"
+                let bitmap: *mut img::lv_img_dsc_t = &mut bitmaps[2];  //  Fetch bitmap for "2"
+                img::set_src(image, bitmap as *const c_void) ? ;       //  Set bottom left image to "2"
                 obj::set_pos(image, 40, 120) ? ;  //  Bottom left
                 image  //  Return the image as bottom_left_image
             },
@@ -130,8 +131,8 @@ impl WatchFace for HandDrawnWatchFace {
             //  Create the bottom right image
             bottom_right_image: {
                 let image = img::create(screen, ptr::null()) ? ;
-                let bitmap: *mut img::lv_img_dsc_t = &mut bitmaps[3];  //  Fetch bitmap for "0"
-                img::set_src(image, bitmap as *const core::ffi::c_void) ? ;                //  Set bottom right image to "3"
+                let bitmap: *mut img::lv_img_dsc_t = &mut bitmaps[3];  //  Fetch bitmap for "3"
+                img::set_src(image, bitmap as *const c_void) ? ;       //  Set bottom right image to "3"
                 obj::set_pos(image, 120, 120) ? ;  //  Bottom right
                 image  //  Return the image as bottom_right_image
             },
