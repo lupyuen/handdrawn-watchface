@@ -1068,12 +1068,12 @@ Function[1020]:
  - func[1020] sig=3 <lvgl::widgets::img::lv_img_header_t::set_w::h95adc2b07754abfc>
  - func[1021] sig=3 <lvgl::widgets::img::lv_img_header_t::set_cf::h6b3a019833aa2f37>
  - func[1022] sig=8 <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::hb70e18e16d4f298a>
- - func[1023] sig=3 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::h072acb29c98ea6c0>
+ - func[1023] sig=3 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::ha001bfc2ed9c7bf1>
  - func[1024] sig=11 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
- - func[1025] sig=5 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::hb43eeb902d89b5fd>
- - func[1026] sig=0 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h7a3d3e4f58cbf7ac>
+ - func[1025] sig=5 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
+ - func[1026] sig=0 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
  - func[1027] sig=5 <core::ptr::drop_in_place::hd83be173219f55c2>
- - func[1028] sig=13 <core::result::Result$LT$T$C$E$GT$::expect::ha984e4bd2ce03696>
+ - func[1028] sig=13 <core::result::Result$LT$T$C$E$GT$::expect::h5298662798b1189b>
  - func[1029] sig=8 <create_clock>
  - func[1030] sig=8 <refresh_clock>
  - func[1031] sig=18 <update_clock>
@@ -1103,7 +1103,7 @@ Table[1]:
  - table[0] type=funcref initial=154 max=154
 Global[2]:
  - global[0] i32 mutable=1 - init i32=5920864
- - global[1] i32 mutable=0 <__data_end> - init i32=677984
+ - global[1] i32 mutable=0 <__data_end> - init i32=677972
 Export[28]:
  - table[0] -> "__indirect_function_table"
  - func[34] <__wasm_call_ctors> -> "__wasm_call_ctors"
@@ -2278,13 +2278,13 @@ Code[1020]:
  - func[1020] size=120 <lvgl::widgets::img::lv_img_header_t::set_w::h95adc2b07754abfc>
  - func[1021] size=120 <lvgl::widgets::img::lv_img_header_t::set_cf::h6b3a019833aa2f37>
  - func[1022] size=173 <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::hb70e18e16d4f298a>
- - func[1023] size=51 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::h072acb29c98ea6c0>
+ - func[1023] size=51 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::ha001bfc2ed9c7bf1>
  - func[1024] size=72 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
- - func[1025] size=5163 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::hb43eeb902d89b5fd>
- - func[1026] size=62 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h7a3d3e4f58cbf7ac>
+ - func[1025] size=3542 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
+ - func[1026] size=62 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
  - func[1027] size=31 <core::ptr::drop_in_place::hd83be173219f55c2>
- - func[1028] size=459 <core::result::Result$LT$T$C$E$GT$::expect::ha984e4bd2ce03696>
- - func[1029] size=487 <create_clock>
+ - func[1028] size=219 <core::result::Result$LT$T$C$E$GT$::expect::h5298662798b1189b>
+ - func[1029] size=285 <create_clock>
  - func[1030] size=48 <refresh_clock>
  - func[1031] size=360 <update_clock>
  - func[1032] size=4 <stackSave>
@@ -15136,7 +15136,7 @@ Data[3]:
   - 0032550: 0000 0000 0000 0000 0000 0000 0000 0000  ................
   - 0032560: 0000 0000 6058 5a00 0100 0000 0000 0000  ....`XZ.........
   - 0032570: 01                                       .
- - segment[2] memory=0 size=471776 - init i32=206208
+ - segment[2] memory=0 size=471764 - init i32=206208
   - 0032580: 0000 0000 0000 0000 0000 0000 0000 0000  ................
   - 0032590: 0000 0000 0000 0000 0000 0000 0000 0000  ................
   - 00325a0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
@@ -44622,7 +44622,7 @@ Data[3]:
   - 00a5820: 0000 0000 0000 0000 0000 0000 0000 0000  ................
   - 00a5830: 0000 0000 0000 0000 0000 0000 0000 0000  ................
   - 00a5840: 0000 0000 0000 0000 0000 0000 0000 0000  ................
-  - 00a5850: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+  - 00a5850: 0000 0000                                ....
 Custom:
  - name: "name"
  - func[0] <__assert_fail>
@@ -45648,12 +45648,12 @@ Custom:
  - func[1020] <lvgl::widgets::img::lv_img_header_t::set_w::h95adc2b07754abfc>
  - func[1021] <lvgl::widgets::img::lv_img_header_t::set_cf::h6b3a019833aa2f37>
  - func[1022] <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::hb70e18e16d4f298a>
- - func[1023] <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::h072acb29c98ea6c0>
+ - func[1023] <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::ha001bfc2ed9c7bf1>
  - func[1024] <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
- - func[1025] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::hb43eeb902d89b5fd>
- - func[1026] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h7a3d3e4f58cbf7ac>
+ - func[1025] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
+ - func[1026] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
  - func[1027] <core::ptr::drop_in_place::hd83be173219f55c2>
- - func[1028] <core::result::Result$LT$T$C$E$GT$::expect::ha984e4bd2ce03696>
+ - func[1028] <core::result::Result$LT$T$C$E$GT$::expect::h5298662798b1189b>
  - func[1029] <create_clock>
  - func[1030] <refresh_clock>
  - func[1031] <update_clock>
