@@ -156,7 +156,7 @@ impl WatchFace for HandDrawnWatchFace {
     //  Update Watch Face
 
     /// Update the widgets in the Watch Face with the current time
-    fn update(&self, state: &WatchFaceState) -> MynewtResult<()> {
+    fn update(&mut self, state: &WatchFaceState) -> MynewtResult<()> {
         //  Update the top left image with the first digit of the hour
         let digit = state.time.hour / 10;             //  Compute the first digit of the hour
         let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
