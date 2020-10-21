@@ -1072,8 +1072,8 @@ Function[1020]:
  - func[1024] sig=11 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
  - func[1025] sig=5 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
  - func[1026] sig=0 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
- - func[1027] sig=5 <core::ptr::drop_in_place::hd83be173219f55c2>
- - func[1028] sig=13 <core::result::Result$LT$T$C$E$GT$::expect::h5298662798b1189b>
+ - func[1027] sig=5 <core::ptr::drop_in_place::h1f770609e4140c08>
+ - func[1028] sig=13 <core::result::Result$LT$T$C$E$GT$::expect::h7903dbf8c56e2548>
  - func[1029] sig=8 <create_clock>
  - func[1030] sig=8 <refresh_clock>
  - func[1031] sig=18 <update_clock>
@@ -1287,7 +1287,7 @@ Elem[1]:
   - elem[150] = func[994] <core::ptr::drop_in_place::h955bee1be0007975>
   - elem[151] = func[997] <_$LT$mynewt..result..MynewtError$u20$as$u20$core..fmt..Debug$GT$::fmt::he2cf3372c44311e4>
   - elem[152] = func[1003] <core::ptr::drop_in_place::hbeb7543aad06b8da>
-  - elem[153] = func[1027] <core::ptr::drop_in_place::hd83be173219f55c2>
+  - elem[153] = func[1027] <core::ptr::drop_in_place::h1f770609e4140c08>
 Code[1020]:
  - func[34] size=5 <__wasm_call_ctors>
  - func[35] size=15 <_lv_indev_init>
@@ -2282,8 +2282,8 @@ Code[1020]:
  - func[1024] size=72 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
  - func[1025] size=3542 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
  - func[1026] size=62 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
- - func[1027] size=31 <core::ptr::drop_in_place::hd83be173219f55c2>
- - func[1028] size=219 <core::result::Result$LT$T$C$E$GT$::expect::h5298662798b1189b>
+ - func[1027] size=31 <core::ptr::drop_in_place::h1f770609e4140c08>
+ - func[1028] size=219 <core::result::Result$LT$T$C$E$GT$::expect::h7903dbf8c56e2548>
  - func[1029] size=285 <create_clock>
  - func[1030] size=48 <refresh_clock>
  - func[1031] size=360 <update_clock>
@@ -45652,8 +45652,8 @@ Custom:
  - func[1024] <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
  - func[1025] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
  - func[1026] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
- - func[1027] <core::ptr::drop_in_place::hd83be173219f55c2>
- - func[1028] <core::result::Result$LT$T$C$E$GT$::expect::h5298662798b1189b>
+ - func[1027] <core::ptr::drop_in_place::h1f770609e4140c08>
+ - func[1028] <core::result::Result$LT$T$C$E$GT$::expect::h7903dbf8c56e2548>
  - func[1029] <create_clock>
  - func[1030] <refresh_clock>
  - func[1031] <update_clock>
