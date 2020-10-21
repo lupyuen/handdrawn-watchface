@@ -10,7 +10,7 @@ Hand-drawn Rust Watch Face for PineTime Smart Watch with LVGL and Mynewt...
 
 1. Time only, no date
 
-1. Digits rendered as bitmaps
+1. Digits rendered as bitmaps ([See the graphics assets](https://github.com/lupyuen/handdrawn-watchface/releases/tag/v1.0.0))
 
 Built with [`pinetime-watchface`](https://crates.io/crates/pinetime-watchface) framework for watch faces.
 
