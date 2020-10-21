@@ -1049,32 +1049,32 @@ Function[1021]:
  - func[1001] sig=15 <lvgl::widgets::img::create::hc64ada726aa7afd9>
  - func[1002] sig=0 <lvgl::widgets::img::set_src::hd8804a7fbb048bcc>
  - func[1003] sig=2 <lvgl::core::obj::set_pos::haa85402e0e56abb7>
- - func[1004] sig=5 <core::ptr::drop_in_place::hbeb7543aad06b8da>
- - func[1005] sig=9 <core::result::Result$LT$T$C$E$GT$::expect::h70a19124252d3c3c>
- - func[1006] sig=9 <core::result::Result$LT$T$C$E$GT$::expect::heae4b69ef3eb3551>
- - func[1007] sig=1 <core::ptr::mut_ptr::_$LT$impl$u20$$BP$mut$u20$T$GT$::is_null::h61e74720a70eac58>
- - func[1008] sig=8 <watchface::get_active_screen::hfef1d9aae8144da2>
- - func[1009] sig=8 <_$LT$u8$u20$as$u20$core..default..Default$GT$::default::h74cb05a1765f01aa>
- - func[1010] sig=6 <_$LT$core..ops..range..RangeFull$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$::index::haeb31368a75a944d>
- - func[1011] sig=6 <core::slice::index::_$LT$impl$u20$core..ops..index..Index$LT$I$GT$$u20$for$u20$$u5b$T$u5d$$GT$::index::h722f3df46a7f3969>
- - func[1012] sig=8 <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::h5c620d0165066300>
- - func[1013] sig=7 <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::hd8b35a21450cf6a0>
- - func[1014] sig=3 <core::array::_$LT$impl$u20$core..convert..AsMut$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_mut::h3ba8c956b9f25538>
- - func[1015] sig=3 <core::array::_$LT$impl$u20$core..convert..AsRef$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_ref::he2f9cf88d190c601>
+ - func[1004] sig=5 <core::ptr::drop_in_place::hdcd3901f3ea9b099>
+ - func[1005] sig=9 <core::result::Result$LT$T$C$E$GT$::expect::h8dfdc25894f14023>
+ - func[1006] sig=9 <core::result::Result$LT$T$C$E$GT$::expect::hac65761724abea67>
+ - func[1007] sig=1 <core::ptr::mut_ptr::_$LT$impl$u20$$BP$mut$u20$T$GT$::is_null::h42530b1517a0d11a>
+ - func[1008] sig=8 <watchface::get_active_screen::h77a578a0cc04843d>
+ - func[1009] sig=8 <_$LT$u8$u20$as$u20$core..default..Default$GT$::default::haa608551a7fadc7c>
+ - func[1010] sig=6 <_$LT$core..ops..range..RangeFull$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$::index::h44c738c6ff880e1a>
+ - func[1011] sig=6 <core::slice::index::_$LT$impl$u20$core..ops..index..Index$LT$I$GT$$u20$for$u20$$u5b$T$u5d$$GT$::index::hf15e58f677f65e90>
+ - func[1012] sig=8 <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::h9dcfeea0e43b7b53>
+ - func[1013] sig=7 <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::hb55d9ef9ad86f957>
+ - func[1014] sig=3 <core::array::_$LT$impl$u20$core..convert..AsMut$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_mut::hcdb274a8d48f2e6b>
+ - func[1015] sig=3 <core::array::_$LT$impl$u20$core..convert..AsRef$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_ref::h2e1226ecb1480158>
  - func[1016] sig=4 <_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$::into_iter::hcfcfc11b1c0740bd>
- - func[1017] sig=8 <_$LT$lvgl..widgets..img..__BindgenBitfieldUnit$LT$Storage$C$Align$GT$$u20$as$u20$core..default..Default$GT$::default::hafea8cf2e99cd1c4>
- - func[1018] sig=28 <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set::h375081bfb9dd0e87>
- - func[1019] sig=4 <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set_bit::h3e18c237e75c204e>
- - func[1020] sig=3 <lvgl::widgets::img::lv_img_header_t::set_h::hf6f594738bd35bd7>
- - func[1021] sig=3 <lvgl::widgets::img::lv_img_header_t::set_w::h95adc2b07754abfc>
- - func[1022] sig=3 <lvgl::widgets::img::lv_img_header_t::set_cf::h6b3a019833aa2f37>
- - func[1023] sig=8 <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::hb70e18e16d4f298a>
- - func[1024] sig=3 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::ha001bfc2ed9c7bf1>
- - func[1025] sig=11 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
- - func[1026] sig=5 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
- - func[1027] sig=0 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
- - func[1028] sig=5 <core::ptr::drop_in_place::h1f770609e4140c08>
- - func[1029] sig=13 <core::result::Result$LT$T$C$E$GT$::expect::h7903dbf8c56e2548>
+ - func[1017] sig=8 <_$LT$lvgl..widgets..img..__BindgenBitfieldUnit$LT$Storage$C$Align$GT$$u20$as$u20$core..default..Default$GT$::default::hd3030e387148468d>
+ - func[1018] sig=28 <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set::h875150ca85a945af>
+ - func[1019] sig=4 <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set_bit::h6f088e28c5c6a65b>
+ - func[1020] sig=3 <lvgl::widgets::img::lv_img_header_t::set_h::h8a192f96647dbee2>
+ - func[1021] sig=3 <lvgl::widgets::img::lv_img_header_t::set_w::h4bb8c387f8aa9bf0>
+ - func[1022] sig=3 <lvgl::widgets::img::lv_img_header_t::set_cf::h1ef089c19a375f62>
+ - func[1023] sig=8 <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::h6c68a61a5fd30f18>
+ - func[1024] sig=3 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::hf6f71602ead55af1>
+ - func[1025] sig=11 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::h756697049c6b9596>
+ - func[1026] sig=5 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::h421c327d4ea36902>
+ - func[1027] sig=0 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h0e0d2914708eeb80>
+ - func[1028] sig=5 <core::ptr::drop_in_place::h9543d278a7ba0543>
+ - func[1029] sig=13 <core::result::Result$LT$T$C$E$GT$::expect::h8ad97b52a1da0d0a>
  - func[1030] sig=8 <create_clock>
  - func[1031] sig=8 <refresh_clock>
  - func[1032] sig=18 <update_clock>
@@ -1287,8 +1287,8 @@ Elem[1]:
   - elem[149] = func[975] <_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$::fmt::h76f0388e8c67831b>
   - elem[150] = func[995] <core::ptr::drop_in_place::h955bee1be0007975>
   - elem[151] = func[998] <_$LT$mynewt..result..MynewtError$u20$as$u20$core..fmt..Debug$GT$::fmt::he2cf3372c44311e4>
-  - elem[152] = func[1004] <core::ptr::drop_in_place::hbeb7543aad06b8da>
-  - elem[153] = func[1028] <core::ptr::drop_in_place::h1f770609e4140c08>
+  - elem[152] = func[1004] <core::ptr::drop_in_place::hdcd3901f3ea9b099>
+  - elem[153] = func[1028] <core::ptr::drop_in_place::h9543d278a7ba0543>
 Code[1021]:
  - func[34] size=5 <__wasm_call_ctors>
  - func[35] size=15 <_lv_indev_init>
@@ -2260,32 +2260,32 @@ Code[1021]:
  - func[1001] size=110 <lvgl::widgets::img::create::hc64ada726aa7afd9>
  - func[1002] size=92 <lvgl::widgets::img::set_src::hd8804a7fbb048bcc>
  - func[1003] size=148 <lvgl::core::obj::set_pos::haa85402e0e56abb7>
- - func[1004] size=31 <core::ptr::drop_in_place::hbeb7543aad06b8da>
- - func[1005] size=166 <core::result::Result$LT$T$C$E$GT$::expect::h70a19124252d3c3c>
- - func[1006] size=166 <core::result::Result$LT$T$C$E$GT$::expect::heae4b69ef3eb3551>
- - func[1007] size=88 <core::ptr::mut_ptr::_$LT$impl$u20$$BP$mut$u20$T$GT$::is_null::h61e74720a70eac58>
- - func[1008] size=447 <watchface::get_active_screen::hfef1d9aae8144da2>
- - func[1009] size=11 <_$LT$u8$u20$as$u20$core..default..Default$GT$::default::h74cb05a1765f01aa>
- - func[1010] size=52 <_$LT$core..ops..range..RangeFull$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$::index::haeb31368a75a944d>
- - func[1011] size=119 <core::slice::index::_$LT$impl$u20$core..ops..index..Index$LT$I$GT$$u20$for$u20$$u5b$T$u5d$$GT$::index::h722f3df46a7f3969>
- - func[1012] size=114 <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::h5c620d0165066300>
- - func[1013] size=3 <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::hd8b35a21450cf6a0>
- - func[1014] size=111 <core::array::_$LT$impl$u20$core..convert..AsMut$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_mut::h3ba8c956b9f25538>
- - func[1015] size=111 <core::array::_$LT$impl$u20$core..convert..AsRef$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_ref::he2f9cf88d190c601>
+ - func[1004] size=31 <core::ptr::drop_in_place::hdcd3901f3ea9b099>
+ - func[1005] size=166 <core::result::Result$LT$T$C$E$GT$::expect::h8dfdc25894f14023>
+ - func[1006] size=166 <core::result::Result$LT$T$C$E$GT$::expect::hac65761724abea67>
+ - func[1007] size=88 <core::ptr::mut_ptr::_$LT$impl$u20$$BP$mut$u20$T$GT$::is_null::h42530b1517a0d11a>
+ - func[1008] size=447 <watchface::get_active_screen::h77a578a0cc04843d>
+ - func[1009] size=11 <_$LT$u8$u20$as$u20$core..default..Default$GT$::default::haa608551a7fadc7c>
+ - func[1010] size=52 <_$LT$core..ops..range..RangeFull$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$::index::h44c738c6ff880e1a>
+ - func[1011] size=119 <core::slice::index::_$LT$impl$u20$core..ops..index..Index$LT$I$GT$$u20$for$u20$$u5b$T$u5d$$GT$::index::hf15e58f677f65e90>
+ - func[1012] size=114 <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::h9dcfeea0e43b7b53>
+ - func[1013] size=3 <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::hb55d9ef9ad86f957>
+ - func[1014] size=111 <core::array::_$LT$impl$u20$core..convert..AsMut$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_mut::hcdb274a8d48f2e6b>
+ - func[1015] size=111 <core::array::_$LT$impl$u20$core..convert..AsRef$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_ref::h2e1226ecb1480158>
  - func[1016] size=52 <_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$::into_iter::hcfcfc11b1c0740bd>
- - func[1017] size=176 <_$LT$lvgl..widgets..img..__BindgenBitfieldUnit$LT$Storage$C$Align$GT$$u20$as$u20$core..default..Default$GT$::default::hafea8cf2e99cd1c4>
- - func[1018] size=1205 <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set::h375081bfb9dd0e87>
- - func[1019] size=577 <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set_bit::h3e18c237e75c204e>
- - func[1020] size=120 <lvgl::widgets::img::lv_img_header_t::set_h::hf6f594738bd35bd7>
- - func[1021] size=120 <lvgl::widgets::img::lv_img_header_t::set_w::h95adc2b07754abfc>
- - func[1022] size=120 <lvgl::widgets::img::lv_img_header_t::set_cf::h6b3a019833aa2f37>
- - func[1023] size=173 <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::hb70e18e16d4f298a>
- - func[1024] size=51 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::ha001bfc2ed9c7bf1>
- - func[1025] size=72 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
- - func[1026] size=4610 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
- - func[1027] size=1263 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
- - func[1028] size=31 <core::ptr::drop_in_place::h1f770609e4140c08>
- - func[1029] size=219 <core::result::Result$LT$T$C$E$GT$::expect::h7903dbf8c56e2548>
+ - func[1017] size=176 <_$LT$lvgl..widgets..img..__BindgenBitfieldUnit$LT$Storage$C$Align$GT$$u20$as$u20$core..default..Default$GT$::default::hd3030e387148468d>
+ - func[1018] size=1205 <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set::h875150ca85a945af>
+ - func[1019] size=577 <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set_bit::h6f088e28c5c6a65b>
+ - func[1020] size=120 <lvgl::widgets::img::lv_img_header_t::set_h::h8a192f96647dbee2>
+ - func[1021] size=120 <lvgl::widgets::img::lv_img_header_t::set_w::h4bb8c387f8aa9bf0>
+ - func[1022] size=120 <lvgl::widgets::img::lv_img_header_t::set_cf::h1ef089c19a375f62>
+ - func[1023] size=173 <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::h6c68a61a5fd30f18>
+ - func[1024] size=51 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::hf6f71602ead55af1>
+ - func[1025] size=72 <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::h756697049c6b9596>
+ - func[1026] size=4610 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::h421c327d4ea36902>
+ - func[1027] size=1263 <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h0e0d2914708eeb80>
+ - func[1028] size=31 <core::ptr::drop_in_place::h9543d278a7ba0543>
+ - func[1029] size=219 <core::result::Result$LT$T$C$E$GT$::expect::h8ad97b52a1da0d0a>
  - func[1030] size=285 <create_clock>
  - func[1031] size=48 <refresh_clock>
  - func[1032] size=360 <update_clock>
@@ -11036,7 +11036,7 @@ Data[3]:
   - 0022500: 7374 7279 2f73 7263 2f67 6974 6875 622e  stry/src/github.
   - 0022510: 636f 6d2d 3165 6363 3632 3939 6462 3965  com-1ecc6299db9e
   - 0022520: 6338 3233 2f70 696e 6574 696d 652d 7761  c823/pinetime-wa
-  - 0022530: 7463 6866 6163 652d 322e 302e 312f 7372  tchface-2.0.1/sr
+  - 0022530: 7463 6866 6163 652d 322e 312e 302f 7372  tchface-2.1.0/sr
   - 0022540: 632f 6c69 622e 7273 4661 696c 6564 2074  c/lib.rsFailed t
   - 0022550: 6f20 6765 7420 6469 7370 6c61 7900 0000  o get display...
   - 0022560: e824 0200 6000 0000 9300 0000 0a00 0000  .$..`...........
@@ -45643,32 +45643,32 @@ Custom:
  - func[1001] <lvgl::widgets::img::create::hc64ada726aa7afd9>
  - func[1002] <lvgl::widgets::img::set_src::hd8804a7fbb048bcc>
  - func[1003] <lvgl::core::obj::set_pos::haa85402e0e56abb7>
- - func[1004] <core::ptr::drop_in_place::hbeb7543aad06b8da>
- - func[1005] <core::result::Result$LT$T$C$E$GT$::expect::h70a19124252d3c3c>
- - func[1006] <core::result::Result$LT$T$C$E$GT$::expect::heae4b69ef3eb3551>
- - func[1007] <core::ptr::mut_ptr::_$LT$impl$u20$$BP$mut$u20$T$GT$::is_null::h61e74720a70eac58>
- - func[1008] <watchface::get_active_screen::hfef1d9aae8144da2>
- - func[1009] <_$LT$u8$u20$as$u20$core..default..Default$GT$::default::h74cb05a1765f01aa>
- - func[1010] <_$LT$core..ops..range..RangeFull$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$::index::haeb31368a75a944d>
- - func[1011] <core::slice::index::_$LT$impl$u20$core..ops..index..Index$LT$I$GT$$u20$for$u20$$u5b$T$u5d$$GT$::index::h722f3df46a7f3969>
- - func[1012] <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::h5c620d0165066300>
- - func[1013] <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::hd8b35a21450cf6a0>
- - func[1014] <core::array::_$LT$impl$u20$core..convert..AsMut$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_mut::h3ba8c956b9f25538>
- - func[1015] <core::array::_$LT$impl$u20$core..convert..AsRef$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_ref::he2f9cf88d190c601>
+ - func[1004] <core::ptr::drop_in_place::hdcd3901f3ea9b099>
+ - func[1005] <core::result::Result$LT$T$C$E$GT$::expect::h8dfdc25894f14023>
+ - func[1006] <core::result::Result$LT$T$C$E$GT$::expect::hac65761724abea67>
+ - func[1007] <core::ptr::mut_ptr::_$LT$impl$u20$$BP$mut$u20$T$GT$::is_null::h42530b1517a0d11a>
+ - func[1008] <watchface::get_active_screen::h77a578a0cc04843d>
+ - func[1009] <_$LT$u8$u20$as$u20$core..default..Default$GT$::default::haa608551a7fadc7c>
+ - func[1010] <_$LT$core..ops..range..RangeFull$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$::index::h44c738c6ff880e1a>
+ - func[1011] <core::slice::index::_$LT$impl$u20$core..ops..index..Index$LT$I$GT$$u20$for$u20$$u5b$T$u5d$$GT$::index::hf15e58f677f65e90>
+ - func[1012] <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::h9dcfeea0e43b7b53>
+ - func[1013] <core::array::_$LT$impl$u20$core..default..Default$u20$for$u20$$u5b$T$u3b$$u20$_$u5d$$GT$::default::hb55d9ef9ad86f957>
+ - func[1014] <core::array::_$LT$impl$u20$core..convert..AsMut$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_mut::hcdb274a8d48f2e6b>
+ - func[1015] <core::array::_$LT$impl$u20$core..convert..AsRef$LT$$u5b$T$u5d$$GT$$u20$for$u20$$u5b$T$u3b$$u20$N$u5d$$GT$::as_ref::h2e1226ecb1480158>
  - func[1016] <_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$::into_iter::hcfcfc11b1c0740bd>
- - func[1017] <_$LT$lvgl..widgets..img..__BindgenBitfieldUnit$LT$Storage$C$Align$GT$$u20$as$u20$core..default..Default$GT$::default::hafea8cf2e99cd1c4>
- - func[1018] <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set::h375081bfb9dd0e87>
- - func[1019] <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set_bit::h3e18c237e75c204e>
- - func[1020] <lvgl::widgets::img::lv_img_header_t::set_h::hf6f594738bd35bd7>
- - func[1021] <lvgl::widgets::img::lv_img_header_t::set_w::h95adc2b07754abfc>
- - func[1022] <lvgl::widgets::img::lv_img_header_t::set_cf::h6b3a019833aa2f37>
- - func[1023] <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::hb70e18e16d4f298a>
- - func[1024] <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::ha001bfc2ed9c7bf1>
- - func[1025] <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::hc969d20c2e2e2636>
- - func[1026] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::had2df01ca425dde0>
- - func[1027] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h06ab702cf4027245>
- - func[1028] <core::ptr::drop_in_place::h1f770609e4140c08>
- - func[1029] <core::result::Result$LT$T$C$E$GT$::expect::h7903dbf8c56e2548>
+ - func[1017] <_$LT$lvgl..widgets..img..__BindgenBitfieldUnit$LT$Storage$C$Align$GT$$u20$as$u20$core..default..Default$GT$::default::hd3030e387148468d>
+ - func[1018] <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set::h875150ca85a945af>
+ - func[1019] <lvgl::widgets::img::__BindgenBitfieldUnit$LT$Storage$C$Align$GT$::set_bit::h6f088e28c5c6a65b>
+ - func[1020] <lvgl::widgets::img::lv_img_header_t::set_h::h8a192f96647dbee2>
+ - func[1021] <lvgl::widgets::img::lv_img_header_t::set_w::h4bb8c387f8aa9bf0>
+ - func[1022] <lvgl::widgets::img::lv_img_header_t::set_cf::h1ef089c19a375f62>
+ - func[1023] <_$LT$lvgl..widgets..img..lv_img_header_t$u20$as$u20$core..default..Default$GT$::default::h6c68a61a5fd30f18>
+ - func[1024] <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::from_error::hf6f71602ead55af1>
+ - func[1025] <_$LT$core..result..Result$LT$T$C$E$GT$$u20$as$u20$core..ops..try..Try$GT$::into_result::h756697049c6b9596>
+ - func[1026] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::new::h421c327d4ea36902>
+ - func[1027] <_$LT$handdrawn_watchface..HandDrawnWatchFace$u20$as$u20$watchface..WatchFace$GT$::update::h0e0d2914708eeb80>
+ - func[1028] <core::ptr::drop_in_place::h9543d278a7ba0543>
+ - func[1029] <core::result::Result$LT$T$C$E$GT$::expect::h8ad97b52a1da0d0a>
  - func[1030] <create_clock>
  - func[1031] <refresh_clock>
  - func[1032] <update_clock>
