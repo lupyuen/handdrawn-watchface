@@ -21,7 +21,7 @@ To select this watch face, set `WatchFaceType` in [`pinetime-rust-mynewt/rust/ap
 type WatchFaceType = handdrawn_watchface::HandDrawnWatchFace;
 ```
 
-The bitmaps take about 200 KB of ROM. To fit them into PineTime's 512 KB Flash ROM, the large title font needs to be removed from the PineTime firmware build, leaving only the small font. (No changes needed for the WebAssembly Simulator)
+The bitmaps take about 170 KB of ROM. To fit them into PineTime's 512 KB Flash ROM, the large title font needs to be removed from the PineTime firmware build, leaving only the small font. (No changes needed for the WebAssembly Simulator)
 
 To remove the title font from the PineTime firmware build, edit [`pinetime-rust-mynewt/libs/pinetime_lvgl_mynewt/lv_conf.h`](https://gitlab.com/lupyuen/pinetime_lvgl_mynewt/-/blob/master/lv_conf.h) and change...
 
