@@ -146,7 +146,7 @@ impl WatchFace for HandDrawnWatchFace {
             &self.bitmaps[digit as usize];     //  As a constant pointer
         img::set_src(                          //  Set the source...
             self.top_left_image,               //  Of the the top left image...
-            bitmap as *const c_void            //  To the bitmap digit
+            bitmap as *const c_void            //  To the digit bitmap
         ) ? ;
         
         //  Update the top right image with the second digit of the hour
@@ -155,7 +155,7 @@ impl WatchFace for HandDrawnWatchFace {
             &self.bitmaps[digit as usize];     //  As a constant pointer
         img::set_src(                          //  Set the source...
             self.top_right_image,              //  Of the the top right image...
-            bitmap as *const c_void            //  To the bitmap digit
+            bitmap as *const c_void            //  To the digit bitmap
         ) ? ;
 
         //  Update the bottom left image with the first digit of the minute
@@ -164,7 +164,7 @@ impl WatchFace for HandDrawnWatchFace {
             &self.bitmaps[digit as usize];     //  As a constant pointer
         img::set_src(                          //  Set the source...
             self.bottom_left_image,            //  Of the the bottom left image...
-            bitmap as *const c_void            //  To the bitmap digit
+            bitmap as *const c_void            //  To the digit bitmap
         ) ? ;
 
         //  Update the bottom right image with the second digit of the minute
@@ -173,7 +173,7 @@ impl WatchFace for HandDrawnWatchFace {
             &self.bitmaps[digit as usize];     //  As a constant pointer
         img::set_src(                          //  Set the source...
             self.bottom_right_image,           //  Of the the bottom right image...
-            bitmap as *const c_void            //  To the bitmap digit
+            bitmap as *const c_void            //  To the digit bitmap
         ) ? ;
 
         //  Return OK
