@@ -30,7 +30,6 @@ use core::{
     ptr,
 };
 use watchface::lvgl::mynewt::{
-    fill_zero,
     result::*,
 };
 use watchface::lvgl::{
@@ -56,6 +55,8 @@ pub struct HandDrawnWatchFace {
     bottom_left_image: lvgl::Ptr,
     /// Image at bottom right
     bottom_right_image: lvgl::Ptr,
+    /// Bitmaps for the 10 digits
+    bitmaps: [img::lv_img_dsc_t; 10],
 }
 
 /// Width of each image and bitmap
@@ -66,13 +67,6 @@ const IMAGE_HEIGHT: u32 = 100;
 
 /// 2 bytes per pixel, in RGB565 format
 const BYTES_PER_PIXEL: u32 = 2;
-
-/// Bitmaps for the 10 digits. LVGL bitmaps need to stored in static memory.
-static mut BITMAPS: [img::lv_img_dsc_t; 10] = [
-    fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t),
-    fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t),
-    fill_zero!(img::lv_img_dsc_t), fill_zero!(img::lv_img_dsc_t)
-];
 
 impl WatchFace for HandDrawnWatchFace {
 
@@ -93,9 +87,38 @@ impl WatchFace for HandDrawnWatchFace {
         //  Compute the image size
         let data_size = IMAGE_WIDTH * IMAGE_HEIGHT * BYTES_PER_PIXEL;
 
-        //  Load the bitmaps. This is unsafe because BITMAPS is a static mutable.
-        unsafe {
-            BITMAPS = [
+        //  Create the widgets
+        let watch_face = Self {
+            //  Create the top left image
+            top_left_image: {
+                let image = img::create(screen, ptr::null()) ? ;  //  `?` will terminate the function in case of error
+                obj::set_pos(image, 40, 20) ? ;  //  Set image position to top left
+                image                            //  Return the image as top_left_image
+            },
+
+            //  Create the top right image
+            top_right_image: {
+                let image = img::create(screen, ptr::null()) ? ;
+                obj::set_pos(image, 120, 20) ? ;  //  Set image position to top right
+                image                             //  Return the image as top_right_image
+            },
+
+            //  Create the bottom left image
+            bottom_left_image: {
+                let image = img::create(screen, ptr::null()) ? ;
+                obj::set_pos(image, 40, 120) ? ;  //  Set image position to bottom left
+                image                             //  Return the image as bottom_left_image
+            },
+
+            //  Create the bottom right image
+            bottom_right_image: {
+                let image = img::create(screen, ptr::null()) ? ;
+                obj::set_pos(image, 120, 120) ? ;  //  Set image position to bottom right
+                image                              //  Return the image as bottom_right_image
+            },
+
+            //  Load the bitmaps
+            bitmaps: [
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/0.bin") as *const u8, header, data_size },
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/1.bin") as *const u8, header, data_size },
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/2.bin") as *const u8, header, data_size },
@@ -106,47 +129,7 @@ impl WatchFace for HandDrawnWatchFace {
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/7.bin") as *const u8, header, data_size },
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/8.bin") as *const u8, header, data_size },
                 img::lv_img_dsc_t { data: include_bytes!("../bitmaps/9.bin") as *const u8, header, data_size },
-            ];
-        }
-
-        //  Create the widgets
-        let watch_face = Self {
-            //  Create the top left image
-            top_left_image: {
-                let image = img::create(screen, ptr::null()) ? ;       //  `?` will terminate the function in case of error
-                let bitmap: *mut img::lv_img_dsc_t = unsafe { &mut BITMAPS[0] };  //  Fetch bitmap for "0"
-                img::set_src(image, bitmap as *const c_void) ? ;       //  Set top left image to "0"
-                obj::set_pos(image, 40, 20) ? ;  //  Top left
-                image  //  Return the image as top_left_image
-            },
-
-            //  Create the top right image
-            top_right_image: {
-                let image = img::create(screen, ptr::null()) ? ;
-                let bitmap: *mut img::lv_img_dsc_t = unsafe { &mut BITMAPS[1] };  //  Fetch bitmap for "1"
-                img::set_src(image, bitmap as *const c_void) ? ;       //  Set top right image to "1"
-                obj::set_pos(image, 120, 20) ? ;  //  Top right
-                image  //  Return the image as top_right_image
-            },
-
-            //  Create the bottom left image
-            bottom_left_image: {
-                let image = img::create(screen, ptr::null()) ? ;
-                let bitmap: *mut img::lv_img_dsc_t = unsafe { &mut BITMAPS[2] };  //  Fetch bitmap for "2"
-                img::set_src(image, bitmap as *const c_void) ? ;       //  Set bottom left image to "2"
-                obj::set_pos(image, 40, 120) ? ;  //  Bottom left
-                image  //  Return the image as bottom_left_image
-            },
-
-            //  Create the bottom right image
-            bottom_right_image: {
-                let image = img::create(screen, ptr::null()) ? ;
-                let bitmap: *mut img::lv_img_dsc_t = unsafe { &mut BITMAPS[3] };  //  Fetch bitmap for "3"
-                img::set_src(image, bitmap as *const c_void) ? ;       //  Set bottom right image to "3"
-                obj::set_pos(image, 120, 120) ? ;  //  Bottom right
-                image  //  Return the image as bottom_right_image
-            },
-            
+            ]
         };
         //  Return the watch face
         Ok(watch_face)
@@ -159,17 +142,17 @@ impl WatchFace for HandDrawnWatchFace {
     fn update(&mut self, state: &WatchFaceState) -> MynewtResult<()> {
         //  Update the top left image with the first digit of the hour
         let digit = state.time.hour / 10;             //  Compute the first digit of the hour
-        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
-            unsafe { &mut BITMAPS[digit as usize] };  //  Unsafe because the bitmaps are static mutable
+        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch the bitmap for the digit...
+            &mut self.bitmaps[digit as usize];        //  As a mutable reference
         img::set_src(                                 //  Set the source...
             self.top_left_image,                      //  Of the the top left image...
             bitmap as *const c_void                   //  To the bitmap digit
         ) ? ;
-
+        
         //  Update the top right image with the second digit of the hour
         let digit = state.time.hour % 10;             //  Compute the second digit of the hour
-        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
-            unsafe { &mut BITMAPS[digit as usize] };  //  Unsafe because the bitmaps are static mutable
+        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch the bitmap for the digit...
+            &mut self.bitmaps[digit as usize];        //  As a mutable reference
         img::set_src(                                 //  Set the source...
             self.top_right_image,                     //  Of the the top right image...
             bitmap as *const c_void                   //  To the bitmap digit
@@ -177,8 +160,8 @@ impl WatchFace for HandDrawnWatchFace {
 
         //  Update the bottom left image with the first digit of the minute
         let digit = state.time.minute / 10;           //  Compute the first digit of the minute
-        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
-            unsafe { &mut BITMAPS[digit as usize] };  //  Unsafe because the bitmaps are static mutable
+        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch the bitmap for the digit...
+            &mut self.bitmaps[digit as usize];        //  As a mutable reference
         img::set_src(                                 //  Set the source...
             self.bottom_left_image,                   //  Of the the bottom left image...
             bitmap as *const c_void                   //  To the bitmap digit
@@ -186,8 +169,8 @@ impl WatchFace for HandDrawnWatchFace {
 
         //  Update the bottom right image with the second digit of the minute
         let digit = state.time.minute % 10;           //  Compute the second digit of the minute
-        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch bitmap for the digit
-            unsafe { &mut BITMAPS[digit as usize] };  //  Unsafe because the bitmaps are static mutable
+        let bitmap: *mut img::lv_img_dsc_t =          //  Fetch the bitmap for the digit...
+            &mut self.bitmaps[digit as usize];        //  As a mutable reference
         img::set_src(                                 //  Set the source...
             self.bottom_right_image,                  //  Of the the bottom right image...
             bitmap as *const c_void                   //  To the bitmap digit
