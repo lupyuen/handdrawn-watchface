@@ -45,7 +45,7 @@ use watchface::{
 ///////////////////////////////////////////////////////////////////////////////
 //  Watch Face Definition
 
-/// Barebones Watch Face with no frills
+/// Widgets and bitmaps for Hand Drawn Watch Face
 pub struct HandDrawnWatchFace {
     /// Image at top left
     top_left_image: lvgl::Ptr,
